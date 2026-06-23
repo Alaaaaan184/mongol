@@ -708,3 +708,9 @@ function renderReviews() {
     list.appendChild(card);
   });
 }
+
+// Exponer funciones al objeto global window para permitir llamadas onclick inline en la versión bundled
+window.addToCart = addToCart;
+window.changeQty = changeQty;
+window.removeFromCart = removeFromCart;
+
