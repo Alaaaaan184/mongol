@@ -1,0 +1,13 @@
+{
+  "name": "comida-asiatica-mongol",
+  "version": "1.0.0",
+  "description": "Sitio web responsivo y moderno para Comida Asiática Mongol en Guasave.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}

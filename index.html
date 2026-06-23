@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Asiática Mongol | Sabores de Asia en Guasave 🥢🔥</title>
+    
+    <!-- SEO Local y General -->
+    <meta name="description" content="Disfruta de la mejor comida asiática en Guasave. Prueba nuestro pollo mongol, arroz frito yakimechi y deliciosos sushis preparados al momento con ingredientes frescos. ¡Ordena en línea aquí!">
+    <meta name="keywords" content="comida asiática en Guasave, pollo mongol en Guasave, arroz frito en Guasave, sushi en Guasave, comida mongol, sushi empanizado, comida oriental Guasave">
+    <meta name="author" content="Comida Asiática Mongol">
+    <link rel="canonical" href="https://comidaasiaticamongol.com/">
+    
+    <!-- Open Graph (Facebook / WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Comida Asiática Mongol | Sabores de Asia en Guasave 🥢🔥">
+    <meta property="og:description" content="Sabores de Asia preparados al momento. Ordena tu platillo favorito para recoger en cualquiera de nuestras sucursales.">
+    <meta property="og:image" content="logo.jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar" id="main-navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo-area">
+                <img src="logo.jpeg" alt="Logo Comida Asiática Mongol" class="logo-img" id="nav-logo">
+                <span class="logo-text">MONGOL</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#sobre-nosotros" class="nav-link">Nosotros</a>
+                <a href="#menu" class="nav-link">Menú</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#opiniones" class="nav-link">Reseñas</a>
+                <a href="#contacto" class="nav-link">Sucursales</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-trigger" id="cart-trigger" aria-label="Ver carrito">
+                    <i class="fa-solid fa-shopping-basket"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- SECCIÓN 1: INICIO (HERO) -->
+        <section id="inicio" class="hero-section">
+            <!-- Slideshow de fondo en JavaScript (o fallback CSS) -->
+            <div class="hero-slider" id="hero-slider">
+                <!-- Se inyectarán dinámicamente las imágenes de fondo -->
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content-container">
+                <div class="hero-card">
+                    <img src="logo.jpeg" alt="Logo Mongol" class="hero-logo-center">
+                    <h1 class="hero-title">Comida Asiática Mongol</h1>
+                    <p class="hero-subtitle">“Sabores de Asia preparados al momento 🥢🔥”</p>
+                    <div class="hero-cta-group">
+                        <a href="#menu" class="btn btn-primary" id="btn-ordena-ya">
+                            <i class="fa-solid fa-fire"></i> Ordena Aquí
+                        </a>
+                        <a href="#menu" class="btn btn-secondary" id="btn-ver-menu">
+                            <i class="fa-solid fa-book-open"></i> Ver Menú
+                        </a>
+                        <a href="#contacto" class="btn btn-outline" id="btn-como-llegar">
+                            <i class="fa-solid fa-map-location-dot"></i> Cómo Llegar
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Indicadores de slide -->
+            <div class="slider-indicators" id="slider-indicators"></div>
+        </section>
+
+        <!-- SECCIÓN 7: SERVICIOS RÁPIDOS -->
+        <section class="services-strip">
+            <div class="services-container">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="service-text">
+                        <h3>Consumo en el lugar</h3>
+                        <p>Visítanos y disfruta caliente</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="service-text">
+                        <h3>Pedidos por WhatsApp</h3>
+                        <p>Rápido y directo a tu sucursal</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                    <div class="service-text">
+                        <h3>Comida al momento</h3>
+                        <p>Frescura y sabor garantizado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: SOBRE NOSOTROS -->
+        <section id="sobre-nosotros" class="section-padding about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Nuestra Esencia</span>
+                    <h2>Sobre Nosotros</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card main-about">
+                        <div class="about-card-icon"><i class="fa-solid fa-bowl-rice"></i></div>
+                        <h3>¿Quiénes Somos?</h3>
+                        <p><strong>Comida Asiática Mongol</strong> es un negocio especializado en platillos inspirados en la cocina asiática, ofreciendo recetas llenas de sabor, ingredientes frescos y porciones generosas para disfrutar en cualquier ocasión.</p>
+                    </div>
+                    
+                    <div class="about-card vision-about">
+                        <div class="about-card-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h3>Nuestra Visión</h3>
+                        <p>Ser una de las opciones favoritas en Guasave para disfrutar comida asiática por su calidad, sabor y excelente atención, logrando que cada visita o pedido sea una experiencia inolvidable.</p>
+                    </div>
+                </div>
+
+                <div class="values-area">
+                    <h3 class="values-title">Nuestros Valores</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-emoji">🍜</div>
+                            <h4>Calidad</h4>
+                            <p>Ingredientes seleccionados cuidadosamente para cada platillo.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-emoji">🥦</div>
+                            <h4>Frescura</h4>
+                            <p>Verduras y carnes preparadas en el mismo instante.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-emoji">🔥</div>
+                            <h4>Sabor Auténtico</h4>
+                            <p>Salsas artesanales e inspiración oriental única.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-emoji">😊</div>
+                            <h4>Atención Amable</h4>
+                            <p>Servicio cálido enfocado en tu satisfacción total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: MENÚ INTERACTIVO -->
+        <section id="menu" class="section-padding menu-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Disfruta el Sabor</span>
+                    <h2>Nuestro Menú Digital</h2>
+                    <p class="section-desc">Selecciona tus platillos favoritos y agrégalos al carrito para ordenar directamente por WhatsApp.</p>
+                    <div class="divider"></div>
+                </div>
+
+                <!-- Buscador y Categorías -->
+                <div class="menu-controls">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="menu-search" placeholder="Buscar platillo (ej: Pollo Mongol, Yakimechi, California...)" aria-label="Buscar platillo">
+                        <button id="clear-search" class="clear-search-btn" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    
+                    <div class="category-filters-container">
+                        <div class="category-filters" id="category-filters">
+                            <button class="filter-btn active" data-category="todos">Todos</button>
+                            <button class="filter-btn" data-category="nuevo">Lo Nuevo</button>
+                            <button class="filter-btn" data-category="entradas">Entradas</button>
+                            <button class="filter-btn" data-category="naturales">Sushis Naturales</button>
+                            <button class="filter-btn" data-category="empanizados">Sushis Empanizados</button>
+                            <button class="filter-btn" data-category="horneados">Sushis Horneados</button>
+                            <button class="filter-btn" data-category="tazones">Tazones y Boxes</button>
+                            <button class="filter-btn" data-category="bebidas">Bebidas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid de Productos -->
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Se inyectan por JavaScript -->
+                    <div class="loading-placeholder">Cargando delicias orientales...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: GALERÍA DE IMÁGENES -->
+        <section id="galeria" class="section-padding gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Galería de Platillos</span>
+                    <h2>Nuestra Cocina</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Se cargan por JavaScript de los archivos de WhatsApp -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: OPINIONES Y CALIFICACIONES (PERSISTENTES) -->
+        <section id="opiniones" class="section-padding reviews-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Clientes Satisfechos</span>
+                    <h2>Opiniones y Calificaciones</h2>
+                    <p class="section-desc">Tu opinión nos ayuda a mejorar. Comparte tu experiencia con nosotros.</p>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="reviews-layout">
+                    <!-- Formulario de Reseña -->
+                    <div class="review-form-card">
+                        <h3>Déjanos tu comentario</h3>
+                        <form id="add-review-form" class="review-form">
+                            <div class="form-group">
+                                <label for="review-name">Nombre Completo</label>
+                                <input type="text" id="review-name" required placeholder="Ej. Valería López">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Calificación</label>
+                                <div class="star-rating-input" id="star-rating-input">
+                                    <button type="button" class="star-btn" data-rating="1" aria-label="1 estrella"><i class="fa-regular fa-star"></i></button>
+                                    <button type="button" class="star-btn" data-rating="2" aria-label="2 estrellas"><i class="fa-regular fa-star"></i></button>
+                                    <button type="button" class="star-btn" data-rating="3" aria-label="3 estrellas"><i class="fa-regular fa-star"></i></button>
+                                    <button type="button" class="star-btn" data-rating="4" aria-label="4 estrellas"><i class="fa-regular fa-star"></i></button>
+                                    <button type="button" class="star-btn" data-rating="5" aria-label="5 estrellas"><i class="fa-regular fa-star"></i></button>
+                                </div>
+                                <input type="hidden" id="selected-rating" value="5" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="review-comment">Comentario</label>
+                                <textarea id="review-comment" rows="4" required placeholder="Cuéntanos qué te pareció el sabor, servicio y porciones..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Opinión</button>
+                        </form>
+                    </div>
+
+                    <!-- Resumen e Historial -->
+                    <div class="reviews-display">
+                        <div class="review-stats-card">
+                            <div class="stats-big-number" id="avg-rating">4.8</div>
+                            <div class="stats-stars" id="avg-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="stats-count" id="total-reviews-count">Basado en 24 calificaciones</div>
+                        </div>
+
+                        <div class="reviews-list-container">
+                            <div class="reviews-list" id="reviews-list">
+                                <!-- Cargados dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: UBICACIÓN Y CONTACTO -->
+        <section id="contacto" class="section-padding contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Visítanos u Ordena</span>
+                    <h2>Ubicación y Contacto</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="contact-general-info">
+                    <div class="info-card">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>Horarios de Atención</h3>
+                        <p class="highlight">Abierto de 1:00 PM a 11:00 PM</p>
+                        <p class="note">⚠️ Los días martes descansamos</p>
+                    </div>
+                </div>
+
+                <div class="branches-grid">
+                    <!-- SUCURSAL 1: PAYÁN -->
+                    <div class="branch-card">
+                        <div class="branch-badge">Sucursal Principal</div>
+                        <div class="branch-logo">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <h3>Sucursal Payán</h3>
+                        <p class="branch-address"><i class="fa-solid fa-location-dot"></i> Blvd Romualdo Ruiz Payán entre Lázaro Cárdenas y Rafael Buelna Col. del Bosque, Guasave</p>
+                        <p class="branch-phone"><i class="fa-solid fa-phone"></i> <strong>687 106 0183</strong></p>
+                        
+
+                        <div class="branch-actions">
+                            <a href="https://maps.app.goo.gl/9u7J5WbUN65oMxya7?g_st=iw" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <i class="fa-solid fa-map-location-dot"></i> Cómo llegar
+                            </a>
+                            <a href="tel:6871060183" class="btn btn-outline">
+                                <i class="fa-solid fa-phone"></i> Llamar
+                            </a>
+                            <a href="https://wa.me/526871060183" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SUCURSAL 2: COLOSIO -->
+                    <div class="branch-card">
+                        <div class="branch-badge">Sucursal Alterna</div>
+                        <div class="branch-logo">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <h3>Sucursal Colosio</h3>
+                        <p class="branch-address"><i class="fa-solid fa-location-dot"></i> Blvd Colosio, entre callejón Ahome y Blvd 20 de Noviembre, Guasave</p>
+                        <p class="branch-phone"><i class="fa-solid fa-phone"></i> <strong>687 878 8854</strong></p>
+                        
+
+                        <div class="branch-actions">
+                            <a href="https://maps.app.goo.gl/Bd2cLtAh6TYVoBhw6?g_st=iw" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <i class="fa-solid fa-map-location-dot"></i> Cómo llegar
+                            </a>
+                            <a href="tel:6878788854" class="btn btn-outline">
+                                <i class="fa-solid fa-phone"></i> Llamar
+                            </a>
+                            <a href="https://wa.me/526878788854" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="logo.jpeg" alt="Logo Mongol Footer" class="footer-logo">
+                <h3>Comida Asiática Mongol</h3>
+                <p>La mejor cocina asiática en Guasave. Sabores auténticos, ingredientes frescos y porciones generosas preparadas al momento.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1CAugxther/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mongol_restaurante?igsh=MXBkcmJsbDF6cXgxdQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Menú Rápido</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#menu">Nuestro Menú</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#opiniones">Reseñas</a></li>
+                    <li><a href="#contacto">Sucursales</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contacto Rápido</h4>
+                <p><i class="fa-solid fa-phone"></i> Suc. Payán: (687) 106 0183</p>
+                <p><i class="fa-solid fa-phone"></i> Suc. Colosio: (687) 878 8854</p>
+                <p><i class="fa-solid fa-envelope"></i> info@comidamongol.com</p>
+                <p><i class="fa-solid fa-clock"></i> Abierto: 1:00 PM - 11:00 PM<br><small>(Martes cerrado)</small></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Comida Asiática Mongol. Todos los derechos reservados. | Diseñado con pasión 🥢🔥</p>
+        </div>
+    </footer>
+
+    <!-- CARRITO DE COMPRAS SLIDE-OVER -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+        <div class="cart-drawer-content">
+            <div class="cart-drawer-header">
+                <h2>Tu Pedido <i class="fa-solid fa-shopping-basket"></i></h2>
+                <button class="close-cart" id="close-cart" aria-label="Cerrar carrito"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="cart-drawer-body">
+                <!-- Contenedor de artículos -->
+                <div class="cart-items-container" id="cart-items-container">
+                    <!-- Se inyecta por JS -->
+                    <div class="empty-cart-message">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                        <p>Tu carrito está vacío.</p>
+                        <a href="#menu" class="btn btn-primary" id="btn-comenzar-compra">Explorar Menú</a>
+                    </div>
+                </div>
+
+                <!-- Formulario de Envío (Aparece sólo si hay items) -->
+                <div class="cart-checkout-form" id="cart-checkout-form" style="display: none;">
+                    <h3>Datos de Entrega</h3>
+                    <div class="form-group">
+                        <label for="checkout-name">Tu Nombre Completo *</label>
+                        <input type="text" id="checkout-name" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="checkout-branch">Sucursal para Recoger *</label>
+                        <select id="checkout-branch" required>
+                            <option value="" disabled selected>Selecciona una sucursal...</option>
+                            <option value="payan">Sucursal Payán (Tel: 687 106 0183)</option>
+                            <option value="colosio">Sucursal Colosio (Tel: 687 878 8854)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-drawer-footer" id="cart-drawer-footer" style="display: none;">
+                <div class="cart-totals">
+                    <span>Total del Pedido:</span>
+                    <span class="cart-total-price" id="cart-total-price">$0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block btn-large" id="btn-send-order">
+                    <i class="fa-brands fa-whatsapp"></i> Confirmar y Enviar Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX PARA LA GALERÍA -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Imagen anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-content" id="lightbox-img" alt="Vista ampliada del platillo">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Imagen siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP GENERAL -->
+    <a href="https://wa.me/526871060183" target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsapp-general-float" aria-label="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Dudas? Chatea con nosotros</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
